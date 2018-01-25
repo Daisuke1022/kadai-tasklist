@@ -1,13 +1,6 @@
 <h1>新規タスク作成</h1>
 
-<%= form_for(@task) do |f|%>
 
-  <%= f.label :content, 'タスク' %>
-  
-  <%= f.text_field :content %>
-  
-  <%= f.submit '追加' %>
-  
-<% end %>
+<%= render 'form', message: @task %>
 
 <%= link_to 'トップページ', tasks_path %>
