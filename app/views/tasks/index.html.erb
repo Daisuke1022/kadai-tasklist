@@ -5,7 +5,13 @@
     <li>
       <%= link_to task.id, task %>
       
-      <%= task.content %></li>
+      
+      <%= task.status %>
+      &gt; 
+
+      <%= task.content %>
+      </li>
+      
   <% end %>
   
 </ul>
